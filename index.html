@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="css/mobile-device.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index-on-load.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="js/img-hover.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<title>Personal Portfolio</title>
+</head>
+
+<body>
+
+	<div id="wrapper">	
+		<div id="fixed-header"> 
+			<div class="tab" id="portfolio-tab" onclick="openTab('portfolio-wrapper');">Portfolio</div>
+			<div class="tab" id="resume-tab" onclick="openTab('resume-wrapper');">Resume</div> 
+		</div>
+		
+		<div id="portfolio-wrapper" class="tab-element">
+			<div id="left-img-wrapper">
+				<a href="projects.html">
+					<img id="projects-img" src="images/project-pic(before).jpg" alt="List of projects" onmouseover="hoverProject(this);" onmouseout="unhoverProject(this)"/>			
+				</a>
+			</div>
+			<div id="right-img-wrapper">
+				<a href="https://github.com/KDvu">
+					<img id="github-img" src="images/github-logo(before).jpg" alt="Github logo" onmouseover="hoverGit(this);" onmouseout="unhoverGit(this);"/>
+				</a>
+			</div>
+			
+			<button class="accordion tab-element"> About Me</button>
+			<div class="panel tab-element">
+				<p>Queen Mary University, Undergraduate <br/> Studying Computer Science</p> 
+			</div>
+		</div>
+		
+		<div id="resume-wrapper" class="tab-element">
+			<div id="header"> Kenny Vu</div>
+			<div id="left"></div>
+			<div id="right"></div>
+			<div id="footer"></div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" language="javascript">
+			openTab("portfolio-wrapper");
+	</script>
+	
+</body>
+
+</html>
