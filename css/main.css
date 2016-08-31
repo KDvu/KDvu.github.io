@@ -50,7 +50,7 @@ html, body{
 	left:40%;
 	float:left;
 	text-align:center;
-	font-size: 1.6vw;
+	font-size: 1.4vw;
 }
 
 #header{
@@ -120,16 +120,6 @@ html, body{
 	text-align: center;
 }
 
-/*#content{
-	width:30%;
-	position: absolute;
-	border-radius: 5px;
-	top: 40%; 
-	left: 50%;
-	margin-top: -8em;
-	margin-left: -15em;
-}*/
-
 #filter_box{
 	width:98%;
 	position: relative;
@@ -178,19 +168,6 @@ div.panel.show{
 	opacity: 1;
     max-height: 200px;
 }
-
-/*a:link, a:visited{
-	background-color:#CAE1FF;
-	border-radius: 5px;
-	padding: 10px 20px;
-	text-align:center;
-	text-decoration: none;
-	display: inline-block;
-}*/
-
-/*a:hover, a:active{
-	background-color:#B0C4DE;	
-}*/
 
 th.sortable{
 	cursor:pointer;
