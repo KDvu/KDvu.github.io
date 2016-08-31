@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/sort-table.js"></script>
+	<script src="js/filter-table.js"></script>
+
+	
+	<title> Projects</title>
+</head>
+
+<body>	
+	<div id="wrapper">		
+		<div style="overflow-x:auto;">	
+			<h1 class="title"> List of Personal Projects </h1>
+		
+			<div id="filter_box">
+				<form id="filter"">
+					<p class="bold">Filter By:</p>
+					<p>Project Name: <input type="text" id="project_name" value=""/></p>
+					<p>
+						Language:
+						Java<input type="checkbox" name="language" value="Java"/>
+						PHP<input type="checkbox" name="language" value="PHP">
+						Javascript<input type="checkbox" name="language" value="Javascript"/>
+						Python<input type="checkbox" name="language" value="Python"/>
+					</p>
+					<p>Status: 
+					   Completed<input type="checkbox" name="status" value="completed"/>
+					   Work in Progress<input type="checkbox" name="status" value="progress"/>
+					</p>   
+					<input type="submit" name="submit" value="Filter" onclick="filterTable();return false;"/>
+					<input type="submit" name="reset" value="Reset"/>
+				</form>
+			</div>
+			</br>
+			
+			<table border="2" cellspacing="3" cellpadding="3" style="margin: 0 auto;">
+				<thead>
+				<tr>
+					<th class="sortable" onclick="return sortTable(0,order[0]);"><a class="tooltip">Name <span>Click to sort</span></a></th>
+					<th class="sortable" onclick="return sortTable(1,order[1]);"><a class="tooltip">Language Used <span>Click to sort</span></a></th>
+					<th class="sortable" onclick="return sortTable(2,order[2]);"><a class="tooltip">Status<span>Click to sort</span></a></th>
+					<th class="sortable" onclick="return sortTable(3,order[3]);"><a class="tooltip">Description<span>Click to sort</span></a></th>	
+					<th>Things Learned/Experienced</th>					
+					<th>Links</th>
+				</tr>
+				</thead>
+				<tbody id="projects">
+				<tr>
+					<td><span class="bold">Personal Website</span></td>
+					<td>Javascript</td>
+					<td>Work in progress</td>
+					<td>My personal website that functions as my online portfolio.</td>					
+					<td>Added Later</td>
+					<td><p><a href="https://github.com/KDvu/personal-website">Github</a></p> <p><a href="index.html">Project page</a></p> </td>					
+				</tr>				
+				<tr>
+					<td><span class="bold">Web Quiz</span></td>
+					<td>Javascript</td>
+					<td>Completed</td>					
+					<td>A template for a multiple choice quiz(radio buttons and check boxes) that provides instant feedback upon completion.</td>
+					<td>
+						<ul>
+							<li>Practice with Javascript/JQuery</li>
+							<li>Practice with CSS</li>
+							<li>Getting input from radio buttons and checkboxes</li>
+							<li>Practice with event listeners with Javascript/JQuery e.g.hover,onclick</li>
+							<li>Using Javascript/Jquery to check the properties of radio buttons and checkboxes</li>
+							<li>Learnt about the redirect and reload methods</li>
+						</ul>
+					</td>
+					<td><p><a href="https://github.com/KDvu/web-quiz">Github page</a></p> <p><a href="projects/Quiz/quiz.html">Project page</a></p> </td>					
+				</tr>
+				<tr>
+					<td><span class="bold">Lottery Simulator</span></td>
+					<td>Javascript</td>
+					<td>Completed</td>
+					<td>A lottery simulator that picks a winning number from a range of numbers specfied by the user.</td>					
+					<td>
+						<ul>
+							<li>Practice with Math.random with a range of values (min and max)</li>
+							<li>Using setInterval and setTimeout, particular when the functions' have parameters</li>
+							<li>Getting input from a textbox</li>
+							<li>Append a specified amount of elements/items into a html document</li>
+						</ul>
+					</td>
+					<td><p><a href="https://github.com/KDvu/lottery-simulator">Github page</a></p> <p><a href="projects/Lottery/lottery.html">Project page</a></p> </td>					
+				</tr>
+				<tr>
+					<td><span class="bold">Turn-based battle system</span></td>
+					<td>Java</td>
+					<td>Work in progress (On hold)</td>			
+					<td>A very basic battle system.</td>					
+					<td>
+						<ul>
+							<li>Learned/Practiced GUI and component arrangement with Java</li>
+							<li>Practice with inheritance and polymorphism</li>
+						</ul>
+					</td>
+					<td><p>Github page</p> <p>Project page</p> </td>					
+				</tr>
+				<tr>
+					<td> <span class="bold">Sorting HTML Table (Onclick)</span></td>
+					<td>Javascript</td>
+					<td>Completed</td>	
+					<td>Learning how to sort a html table by clicking a column. This page is an example.</td>					
+					<td>
+						<ul>
+							<li>Learned how to sort a 2D array in both ascending and descending order</li>
+							<li>Learned about the getting/replacing text of a table body</li>				
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/personal-website/blob/master/js/sort-table.js">Github page</a> </td>					
+				</tr>		
+				<tr>
+					<td> <span class="bold">Sorting Algorithms</span></td>
+					<td>Java</td>
+					<td>Completed</td>			
+					<td>Learning the code for the different sorting algorithms, bubble, merge, quick and insertion/shuttle sort.</td>					
+					<td>
+						<ul>
+							<li>Practice with recursion</li>
+							<li>Learned how to code bubble sort</li>
+							<li>Learned how to code merge sort</li>			
+							<li>Learned how to code quick sort</li>
+							<li>Learned how to code insertion/shuttle sort</li>										
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/sort-and-search">Github page</a></td>					
+				</tr>			
+					<td> <span class="bold">Linear + Binary Search</span></td>
+					<td>Java</td>
+					<td>Completed</td>
+					<td>Learning the code for linear and binary search</td>					
+					<td>
+						<ul>
+							<li>Practice with recursion</li>
+							<li>Learned how to code linear search</li>
+							<li>Learned how to code binary search</li>												
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/sort-and-search">Github page</a></td>					
+				</tr>			
+				<tr>
+					<td> <span class="bold"> Calculator with GUI </span></td>
+					<td>Python</td>
+					<td>Completed</td>
+					<td>A basic calculator created using Python's Tkinter for the GUI</td>
+					<td>
+						<ul>
+							<li>Practice Python</li>
+							<li>Learned/Practiced GUI and component arrangement with Python</li>
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/python-calculator">Github page</a></td>
+				</tr>
+				<tr>
+					<td> <span class="bold">Filter HTML table</span></td>
+					<td>Javascript</td>
+					<td>Completed</td>	
+					<td>Learning how to display only information specfied by the user. This page is an example.</td>					
+					<td>
+						<ul>
+							<li>Practice getting/replacing text of a table body</li>
+							<li></li>		
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/personal-website/blob/master/js/filter-table.js">Github page</a></td>		
+				</tr>
+				<tr>
+					<td><span class="bold"> Alarm/Stop Clock</span></td>
+					<td>Python</td>
+					<td>Completed</td>
+					<td>An alarm or stop clock. The user sets a time for the countdown, which can be stopped/resumed anytime, an alarm goes off when the count reaches zero.</td>
+					<td>
+						<ul>
+							<li>Learned about updating frame/user interface with new values, e.g. changing text</li>
+							<li>Practice with buttons and events</li>
+						</ul>
+					</td>
+					<td><a href="https://github.com/KDvu/python-alarm">Github page</a></td>							
+				</tr>
+				</tbody>
+			</table>
+		</div>		
+	</div>
+	
+	<script type="text/javascript" language="javascript">
+			
+		var tbody = document.getElementById("projects"); //Get the table body
+		var rows = tbody.rows; //Get the rows
+		var no_of_rows = rows.length; //Get the number of rows in the table
+		
+		var values = new Array();
+		values = getTableValues(values,rows,no_of_rows);
+	</script>
+</body>
+
+</html>
