@@ -55,6 +55,17 @@
 	
 	/*CSS FOR RESUME TAB*/
 	
+	.tab.home-button{
+		position:relative;
+		cursor:pointer;	
+		height:100%;
+		width:100%;
+		left:0%;
+		top:0%;
+		text-align:center;
+		font-size: 1.2em;
+	}
+	
 	#header{
 		position:relative;
 		background-color:#B0C4DE;
