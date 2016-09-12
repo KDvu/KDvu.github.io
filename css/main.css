@@ -1,3 +1,4 @@
+/***** Wrappers *****/
 html, body{
 	background-color:#F8F8FF;
 	height:100%;
@@ -24,12 +25,13 @@ html, body{
 #resume-wrapper{
 	display:none;
 	position:relative;
-	top:10%;
+	top:12.5%;
 	margin-top: auto;
 	margin-left: auto;
 	z-index:1;
 }
 
+/***** Fixed headers *****/
 #fixed-header{
 	position:fixed;
 	overflow:hidden;
@@ -46,11 +48,13 @@ html, body{
 	overflow:hidden;
 	top:0px;
 	left:0px;
-    	width:100%;
-	height:30px;
+    width:100%;
+    height:30px;
 	background-color:#B0C4DE;
 	z-index:2;
 }	
+
+/***** Tabs *****/
 
 .tab{
 	position:relative;
@@ -76,17 +80,7 @@ html, body{
 	font-size: 1.3em;
 }
 
-#header{
-	position:relative;
-	background-color:#B0C4DE;
-	width:100%;
-	/*height:70px;*/
-	border-radius:5px;
-	margin: 0 auto;
-	text-align: center;
-	font-size:250%;
-	line-height:70px;
-}
+/***** Image Wrappers *****/
 
 #left-img-wrapper{
 	position:relative;
@@ -108,13 +102,27 @@ html, body{
 	margin-left:auto;
 }
 
+/***** Resume classes/Ids *****/
+
+#header{
+	position:relative;
+	background-color:#B0C4DE;
+	width:100%;
+	/*height:70px;*/
+	border-radius:5px;
+	margin: 0 auto;
+	text-align: center;
+	font-size:250%;
+	line-height:70px;
+}
+
 #left{
 	position:relative;
 	float:left;
 	background-color:#BCD2EE;
 	border-radius:5px;
 	width:20%;
-	height:500px;
+	height:400px;
 	margin-top:5px;
 	margin-bottom:5px;
 }
@@ -125,23 +133,65 @@ html, body{
 	background-color:#BCD2EE;
 	border-radius:5px;
 	width:79.5%;
-	height:500px;
+	height:400px;
 	margin-top:5px;
 	margin-bottom:5px;
 }
 
 #footer{
 	position:relative;
+	text-align:center;
 	clear:both;
 	background-color:#B0C4DE;
-	width:100%;
-	height:65px;
+	border-radius:5px;
+	width:99.25%;
+	overflow:auto;
+	padding:5px;
+}
+
+#footer span{
+	position: relative;
+	top:50%;
 }
 
 .title {
-	font-size:1.6em;
+	text-decoration: underline;
 	text-align: center;
+	font-size: 1.2em;
+	font-weight:bold;
 }
+
+.sub-heading {
+	text-decoration: underline;
+	text-align: left;
+	font-size: 1em;
+	font-weight:bold;
+	padding-left: 12px;
+}
+
+.project-description{
+	position:relative;
+	text-align:left;
+	font-size: 1em;
+	padding-left: 12px;
+	top: -2.5%;
+	margin: 0 auto;
+}
+
+/***** Lists (ul + ol) *****/
+
+#skills-list{
+	font-size:1.2em;
+	line-height:200%;
+}
+
+.list{
+	position:relative;
+	margin: 0 auto;
+	top:-2%;
+}
+
+/***** filter-box (projects page) *****/
 
 #filter_box{
 	width:98%;
@@ -152,11 +202,12 @@ html, body{
 	padding:10px;
 }
 
+/***** Buttons/Accordion *****/
+
 div.button{
 	margin:auto;
 	text-align:center;
 }
-
 
 button.accordion{
 	position:relative;
@@ -192,14 +243,29 @@ div.panel.show{
     max-height: 200px;
 }
 
-th.sortable{
-	cursor:pointer;
+/*a:link, a:visited{
+	background-color:#CAE1FF;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-align:center;
+	text-decoration: none;
+	display: inline-block;
+}*/
+
+/*a:hover, a:active{
 	background-color:#B0C4DE;	
-}
+}*/
 
 .bold{
 	font-weight: bold;
 	margin: 0 auto;
+}
+
+/***** Tooltips *****/
+
+th.sortable{
+	cursor:pointer;
+	background-color:#B0C4DE;	
 }
 
 a.tooltip {
@@ -221,68 +287,3 @@ a.tooltip:hover span{
     border:1px solid #DCA;
 	background:white;	
 }   
-
-@media only screen and (min-width: 480px){
-	/*a:link, a:visited{
-		background-color:black;
-		border-radius: 5px;
-		padding: 10px 20px;
-		text-align:center;
-		text-decoration: none;
-		display: inline-block;
-	}
-	
-	#fixed-header{
-		position:fixed;
-		overflow:hidden;
-		top:0px;
-		padding:0%;
-		left:0px;
-		width:100%;
-		height:50px;
-		background-color:#B0C4DE;
-		z-index:2;
-	}
-	
-	.tab{
-		position:relative;
-		cursor:pointer;	
-		height:100%;
-		width:50%;
-		padding:0%;
-		left:0%;
-		float:left;
-		text-align:center;
-		line-height:100%;
-		font-size: 24px;
-	}
-	
-	#portfolio-wrapper{
-		top:75px;
-		width:100%;
-		height:100%;
-	}
-	
-	#left-img-wrapper{
-		float:none;
-		left:0%;
-		margin:0 auto;
-	}
-	
-	#right-img-wrapper{
-		float:none;
-		right:0%;
-		margin:0 auto;
-	}
-	
-	#projects-img{
-		width:100%;
-		height:40%;
-	}
-	
-	#github-img{
-		width:100%;
-		height:40%;
-	}
-}	
-*/

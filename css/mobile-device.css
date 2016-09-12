@@ -1,5 +1,4 @@
 @media screen and (max-width: 480px){	
-	/*CSS FOR PORTFOLIO TAB */
 	#fixed-header{
 		position:fixed;
 		overflow:hidden;
@@ -21,8 +20,8 @@
 		left:0%;
 		float:left;
 		text-align:center;
-		line-height:100%;
-		font-size: 24px;
+		line-height:2em;
+		font-size: 1.4em;
 	}
 	
 	#portfolio-wrapper{
@@ -82,9 +81,9 @@
 		background-color:#BCD2EE;
 		border-radius:5px;
 		width:100%;
-		height:500px;
 		margin-top:5px;
 		margin-bottom:5px;
+		overflow:auto;
 	}
 
 	#right{
@@ -92,15 +91,21 @@
 		background-color:#BCD2EE;
 		border-radius:5px;
 		width:100%;
-		height:500px;
 		margin-top:5px;
 		margin-bottom:5px;
+		overflow: auto;
 	}
 
 	#footer{
 		position:relative;
+		text-align:center;
 		background-color:#B0C4DE;
 		width:100%;
-		height:65px;
+		overflow:auto;
+	}
+	
+	#footer span{
+		position: relative;
+		top:50%;
 	}
 }
