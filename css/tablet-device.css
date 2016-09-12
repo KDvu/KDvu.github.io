@@ -1,0 +1,142 @@
+@media screen and (min-width: 600px){	
+	/***** Fixed-header *****/
+
+	#fixed-header{
+		position:fixed;
+		overflow:hidden;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:75px;
+		background-color:#B0C4DE;
+		z-index:2;
+	}
+
+	/***** Tab *****/
+
+	.tab{
+		position:relative;
+		cursor:pointer;	
+		height:100%;
+		width:15%;
+		padding:1.5%;
+		left:35%;
+		float:left;
+		text-align:center;
+		font-size: 2em;
+	}
+
+	/***** Portfolio content *****/
+
+	#portfolio-wrapper{
+		top:75px;
+		width:100%;
+		height:100%;
+	}
+
+	#left-img-wrapper{
+		position:relative;
+		display:inline-block;
+		float:left;
+		left:5%;
+	}
+
+	#right-img-wrapper{
+		position:relative;
+		display:inline-block;
+		float:right;
+		right:5%;
+	}
+
+	#projects-img{
+		width:300px;
+		height:300px;
+	}
+
+	#github-img{
+		width:300px;
+		height:300px;
+	}
+
+	/***** Resume content *****/
+	.tab.home-button{
+		position:relative;
+		cursor:pointer;	
+		height:100%;
+		width:100%;
+		left:0%;
+		top:0%;
+		text-align:center;
+		font-size: 1.2em;
+	}
+
+	#header{
+		position:relative;
+		background-color:#B0C4DE;
+		width:100%;
+		border-radius:5px;
+		margin: 0 auto;
+		text-align: center;
+		font-size:250%;
+		line-height:70px;
+	}
+
+	#left{
+		position:relative;
+		background-color:#BCD2EE;
+		border-radius:5px;
+		width:100%;
+		margin-top:5px;
+		margin-bottom:5px;
+		overflow:auto;
+	}
+
+	#right{
+		position:relative;
+		background-color:#BCD2EE;
+		border-radius:5px;
+		width:100%;
+		margin-top:5px;
+		margin-bottom:5px;
+		overflow: auto;
+	}
+
+	#footer{
+		position:relative;
+		text-align:center;
+		background-color:#B0C4DE;
+		width:98.5%;
+		overflow:auto;
+	}
+
+	#footer span{
+		position: relative;
+		top:50
+	}
+}
+
+@media screen and (min-width: 801px){	
+	
+	#left-img-wrapper{
+		position:relative;
+		display:inline-block;
+		float:left;
+		left:10%;
+	}
+
+	#right-img-wrapper{
+		position:relative;
+		display:inline-block;
+		float:right;
+		right:10%;
+	}
+	
+	#resume-wrapper{
+		display:none;
+		position:relative;
+		top:7.5%;
+		margin-top: auto;
+		margin-left: auto;
+		z-index:1;
+	}
+}
