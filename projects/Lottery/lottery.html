@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/lottery.css"/> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/simulator.js"></script>	
+	
+	<title> Lottery </title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1 style="text-align:center; margin:0 auto;"> Lottery </h1>
+			<p>What is this? </p>
+			</p>This is a lottery simulator. You select how many numbers you want in the lottery and then click the button to run the lottery</p>	
+		</div>
+
+		<div id="main"></div>
+		
+		<div id="bottom">
+			<form onsubmit="return false">
+				<p> How many numbers do you want? (1-100) </p>
+				<input type="text" id="txt_number" size="25" value="84"/> 
+				<input type="submit" value="Submit" onclick="return appendNumbers();">
+			</form>
+			
+			<button id="button_roll" disabled="true" onclick="return rollLottery();"> Roll Lottery </button>
+		</div>
+	</div>
+</body>
+
+</html>

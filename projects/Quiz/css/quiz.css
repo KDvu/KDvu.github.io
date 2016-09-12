@@ -1,0 +1,121 @@
+body{
+	background-color:#F8F8FF;
+}
+
+#wrapper{
+	width:80%;
+	margin:0 auto;
+	border:5px solid red;
+}
+
+#header{
+	border:5px solid blue;
+}
+
+#quiz{
+	border:5px solid green;
+}
+
+#title{
+	text-align:center;
+	font-weight:bold;
+	font-size:2em;
+	margin:0 auto;
+}
+
+.sub-heading{
+	text-decoration:underline;
+	font-size:1.4em;
+	margin:0 auto;
+}
+
+.description{
+	font-size:1.2em;
+	margin-top:2px;
+}
+
+.question{
+	margin-bottom:2px;
+}
+
+.answer_box{
+	font-size:1.3em;
+	cursor:pointer;
+}
+
+.answer{
+	
+}
+
+.correct{
+	width:30%;
+	height:10%;		
+	background-color:#B0C4DE;
+	color:green;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:1px;
+}
+
+.correction{
+	width:30%;
+	height:10%;		
+	background-color:#B0C4DE;
+	color:yellow;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:1px;
+}
+
+.wrong{
+	width:30%;
+	height:10%;		
+	background-color:#B0C4DE;
+	color:red;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:1px;
+}
+
+.warning{
+	margin: 2px 0px 2px 15px;
+	color:red;
+	font-size:0.8em;
+	font-style:italic;
+}
+
+.points{
+	display:inline-block;
+	border-radius:3px;
+	width:10%;
+	height:10%;
+	text-align: center;
+	background-color:#E6E6FA;
+	margin-left:10px;
+	font-size: 0.8em;
+}
+
+.align-center{
+	text-align:center;
+}
+
+input[type="checkbox"],input[type="radio"]{
+    vertical-align: middle;
+    width: 20px;
+    height: 45px;
+	cursor:pointer;
+}
+
+#submit_button, #reload_button{
+	width:20em;
+	height:2em;
+}
+
+#label{
+	margin: 0 auto;
+}
+
+button:disabled{
+	border:3px solid blue;
+	opacity:0.5;
+}
