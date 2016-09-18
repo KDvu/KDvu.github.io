@@ -294,7 +294,7 @@ a.tooltip:hover span{
 	background:white;	
 }   
 
-@media screen and (min-width: 1281px){	
+@media screen and (min-width: 1400px){	
 	.tab{
 		position:relative;
 		cursor:pointer;	
