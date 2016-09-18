@@ -233,11 +233,12 @@ button.accordion.active, button.accordion:hover{
 	background-color:#B0C4DE;
 }
 
+/***** Panel *****/
 div.panel{
-	background-color:#CAE1FF;
-	text-align:center;
-	padding: 2px 15px;
-	max-height: 0;
+    background-color:#CAE1FF;
+    text-align:center;
+    padding: 2px 15px;
+    max-height: 0;
     overflow: hidden;
     transition: 0.6s ease-in-out;
     opacity: 0;
@@ -248,19 +249,6 @@ div.panel.show{
 	opacity: 1;
     max-height: 200px;
 }
-
-/*a:link, a:visited{
-	background-color:#CAE1FF;
-	border-radius: 5px;
-	padding: 10px 20px;
-	text-align:center;
-	text-decoration: none;
-	display: inline-block;
-}*/
-
-/*a:hover, a:active{
-	background-color:#B0C4DE;	
-}*/
 
 .bold{
 	font-weight: bold;
