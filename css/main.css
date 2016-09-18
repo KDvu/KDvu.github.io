@@ -191,7 +191,7 @@ html, body{
 	top:-2%;
 }
 
-/***** filter-box (projects page) *****/
+/***** CSS for projects page *****/
 
 #filter_box{
 	width:98%;
@@ -200,6 +200,12 @@ html, body{
 	background-color:#CAE1FF;
 	border: 2px solid black;
 	padding:10px;
+}
+
+.project-list{
+	position:relative;
+	overflow-x:auto;
+	top:5%;
 }
 
 /***** Buttons/Accordion *****/
@@ -329,5 +335,93 @@ a.tooltip:hover span{
 	#github-img{
 		width:500px;
 		height:500px;
+	}
+	
+	/* CSS FOR RESUME content */
+	#header{
+		position:relative;
+		background-color:#B0C4DE;
+		width:100%;
+		/*height:70px;*/
+		border-radius:5px;
+		margin: 0 auto;
+		text-align: center;
+		font-size:250%;
+		line-height:70px;
+	}
+
+	#left{
+		position:relative;
+		float:left;
+		background-color:#BCD2EE;
+		border-radius:5px;
+		width:20%;
+		height:600px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+
+	#right{
+		position:relative;
+		float:right;
+		background-color:#BCD2EE;
+		border-radius:5px;
+		width:79.5%;
+		height:600px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+
+	#footer{
+		position:relative;
+		text-align:center;
+		clear:both;
+		background-color:#B0C4DE;
+		border-radius:5px;
+		width:99.25%;
+		overflow:auto;
+		padding:5px;
+	}
+
+	#footer span{
+		position: relative;
+		top:50%;
+	}
+	
+	.title {
+		text-decoration: underline;
+		text-align: center;
+		font-size: 1.6em;
+		font-weight:bold;
+	}
+
+	.sub-heading {
+		text-decoration: underline;
+		text-align: left;
+		font-size: 1.2em;
+		font-weight:bold;
+		padding-left: 12px;
+	}
+
+	.project-description{
+		position:relative;
+		text-align:left;
+		font-size: 1.2em;
+		padding-left: 12px;
+		top: -2.5%;
+		margin: 0 auto;
+	}
+	/***** Lists (ul + ol) *****/
+
+	#skills-list{
+		font-size:1.4em;
+		line-height:250%;
+	}
+
+	.list{
+		position:relative;
+		margin: 0 auto;
+		top:-2%;
+		font-size:1.2em;
 	}
 }
