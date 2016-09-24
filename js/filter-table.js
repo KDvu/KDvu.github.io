@@ -1,8 +1,4 @@
 function filterTable(){
-	/*
-	var project_name = document.getElementById("project_name").value;
-	alert(project_name);
-	*/	
 	
 	try{
 		//Arrays to store values matching the search critera
@@ -67,7 +63,6 @@ function filterTable(){
 		for (i = 0; i < no_of_rows; i++) {		
 			rows[i].innerHTML = "";
 		}		
-		alert(err.message);
 	}
 }
 
