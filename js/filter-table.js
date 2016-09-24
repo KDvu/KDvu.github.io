@@ -102,6 +102,11 @@ function insertProgressValues(a,b,c,colNo){
 function displayResults(a){
 	var table = $("#tbl");
 	
+	var msgExists = $(".nothing-found");
+	if(msgExists.length > 0){
+		msgExists.remove();
+	}
+	
 	if(a.length != 0){
 		table.show();
 
