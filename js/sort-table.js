@@ -11,7 +11,7 @@ function sortTable(col,asc){
 	values = getTableValues(values,rows,no_of_rows);
 	var cells, no_of_cells; 
 	
-	console.log(rows);
+	//console.log(rows);
 	
 	for(i=0;i<no_of_rows;i++){
 		cells = rows[i].cells; //Get the cells of the current row
@@ -38,6 +38,10 @@ function sortTable(col,asc){
 	/*for(y=0;y<values.length;y++){
 		alert(values[y][0]);
 	}*/
+	
+	for (i = 0; i < no_of_rows; i++) {
+		rows[i].innerHTML = "";
+	}
 	
 	for (i = 0; i < no_of_rows; i++) {
 		if(values[i] != "")
