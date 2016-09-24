@@ -100,12 +100,26 @@ function insertProgressValues(a,b,c,colNo){
 
 //This function displays the results of the search
 function displayResults(a){
-	for (i = 0; i < no_of_rows; i++) {
-		rows[i].innerHTML = "";
-	}
-		
-	for (i = 0; i < a.length; i++) {
-		rows[i].innerHTML = "<td>" + a[i].join("</td><td>") + "</td>";
+	var table = $("#tbl");
+	
+	if(a.length != 0){
+		table.show();
+
+		for (i = 0; i < no_of_rows; i++) {
+			rows[i].innerHTML = "";
+		}
+			
+		for (i = 0; i < a.length; i++) {
+			rows[i].innerHTML = "<td>" + a[i].join("</td><td>") + "</td>";
+		}
+	} else{
+		table.hide();
+		var filter_box = $("#filter_box");
+		var input = document.createElement("p");
+		input.innerHTML = "Nothing found";
+		input.setAttribute("class", "nothing-found");
+		document.body.appendChild(input);
+		filter_box.after(input);
 	}
 }
 
