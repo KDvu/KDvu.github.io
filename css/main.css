@@ -208,6 +208,12 @@ html, body{
 	top:5%;
 }
 
+.nothing-found{
+	text-align:center;
+	font-size: 1.6em;
+	font-weight:bold;
+}
+
 /***** Buttons/Accordion *****/
 
 div.button{
