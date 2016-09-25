@@ -14,6 +14,12 @@
 	border: 5px solid blue;
 }
 
+.sub-heading{
+	text-decoration:underline;
+	font-size:1.4em;
+	margin:0 auto;
+}
+
 #bottom{
 	width:100%;
 	border:5px solid green;
