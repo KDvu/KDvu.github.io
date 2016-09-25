@@ -1,6 +1,10 @@
 function filterTable(){
 	
 	try{
+		if(document.getElementById("tbl").style.display == "none"){
+			$("#tbl").show(); //Shows the table if it is hidden
+		}
+		
 		//Arrays to store values matching the search critera
 		var matchedNames = new Array();
 		var matchedLanguage = new Array();
@@ -60,9 +64,9 @@ function filterTable(){
 		//testArray(matchedProgress);
 		
 	} catch(err){
-		for (i = 0; i < no_of_rows; i++) {		
-			rows[i].innerHTML = "";
-		}		
+		$("#tbl").hide();
+		checkNothingFound(); //Check if "Nothing Found" message already exists
+		printNothingFound(); //Print "Nothing Found" message
 	}
 }
 
@@ -102,13 +106,11 @@ function insertProgressValues(a,b,c,colNo){
 function displayResults(a){
 	var table = $("#tbl");
 	
-	var msgExists = $(".nothing-found");
-	if(msgExists.length > 0){
-		msgExists.remove();
-	}
+	//Removes the message display when nothing is found during the previous filter
+	checkNothingFound();
 	
 	if(a.length != 0){
-		table.show();
+		table.show(); //Show the table if it is hidden
 
 		for (i = 0; i < no_of_rows; i++) {
 			rows[i].innerHTML = "";
@@ -118,13 +120,8 @@ function displayResults(a){
 			rows[i].innerHTML = "<td>" + a[i].join("</td><td>") + "</td>";
 		}
 	} else{
-		table.hide();
-		var filter_box = $("#filter_box");
-		var input = document.createElement("p");
-		input.innerHTML = "Nothing found";
-		input.setAttribute("class", "nothing-found");
-		document.body.appendChild(input);
-		filter_box.after(input);
+		table.hide(); //Hide table
+		printNothingFound(); //Replace the hidden table with a message
 	}
 }
 
@@ -173,4 +170,22 @@ function getTableValues(values,rows,no_of_rows){
 		}
 	}	
 	return values;
+}
+
+//This function checks if a nothing found class exists and removes it if it does exists
+function checkNothingFound(){
+	var msgExists = $(".nothing-found");
+	if(msgExists.length > 0){
+		msgExists.remove();
+	}
+}
+
+//This function prints the message "Nothing Found"
+function printNothingFound(){
+	var filter_box = $("#filter_box");
+	var input = document.createElement("p");
+	input.innerHTML = "Nothing found";
+	input.setAttribute("class", "nothing-found");
+	document.body.appendChild(input);
+	filter_box.after(input);
 }
